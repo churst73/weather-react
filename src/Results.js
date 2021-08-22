@@ -23,7 +23,7 @@ export default function Results() {
         <div className="row">
           <div className="col-6">
             <img
-              src={weatherData.imgUrl}
+              src="smileysun-01.png"
               alt={weatherData.description}
               width="160px"
               className="sun ms-3 me-2"
