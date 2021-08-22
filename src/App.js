@@ -1,10 +1,15 @@
 import React from "react";
+import Search from "./Search.js";
+import Results from "./Results.js";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!!!</h1>
+      <div className="container">
+        <Search />
+        <Results />
+      </div>
     </div>
   );
 }

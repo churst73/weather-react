@@ -1,0 +1,42 @@
+input {
+  width: 400px;
+  padding: 5px;
+  margin-right: 10px;
+  margin-left: 20px;
+  border: solid 3px #dfa73e;
+  border-radius: 10px;
+}
+
+::placeholder {
+  color: #dfa73e;
+}
+
+.Search .prompt {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  padding-top: 25px;
+}
+
+.Search .button-search {
+  color: #f2ebdf;
+  background-color: #dfa73e;
+  border: solid 3px #dfa73e;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Search .location {
+  color: #dfa73e;
+  margin-left: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: left;
+  margin-top: 15px;
+}
+.Search .location:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
