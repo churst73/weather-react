@@ -9,7 +9,7 @@ export default function Results() {
     description: "Sunny",
     humidity: 20,
     wind: 4,
-    imgUrl: "smileysun-01.png",
+    imgUrl: "./images/smileysun.png",
   };
   return (
     <div className="Results">
@@ -23,14 +23,14 @@ export default function Results() {
         <div className="row">
           <div className="col-6">
             <img
-              src="smileysun-01.png"
+              src={weatherData.imgUrl}
               alt={weatherData.description}
               width="160px"
               className="sun ms-3 me-2"
             ></img>
             <span className="current-temp">{weatherData.temp}</span>
             <img
-              src="degreec.png"
+              src="./images/degreec.png"
               className="degree"
               alt="degree"
               width="40px"
