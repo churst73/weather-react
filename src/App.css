@@ -11,3 +11,12 @@
   display: block;
   margin: auto;
 }
+
+.App .coder-link {
+  font-family: "Poppins", sans-serif;
+  margin-top: 50px;
+  color: #6d6e6f;
+}
+.App .name {
+  color: #6d6e6f;
+}
