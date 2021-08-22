@@ -12,7 +12,7 @@ function App() {
       </div>
       <div className="mt-5">
         <a
-          href="https://github.com/churst73/hurst-weather-app"
+          href="https://github.com/churst73/weather-react"
           target="_blank"
           rel="noreferrer"
           className="coder-link"
