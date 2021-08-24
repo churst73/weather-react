@@ -12,8 +12,10 @@ export default function Search() {
         <button type="submit" className="button-search">
           Search
         </button>
+        <a href="#">
+          <i class="fas fa-map-marker-alt"></i>
+        </a>
       </form>
-      <div className="location">Current Location</div>
     </div>
   );
 }

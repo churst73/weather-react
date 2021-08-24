@@ -40,3 +40,10 @@ input {
   text-decoration: underline;
   cursor: pointer;
 }
+
+.Search .fa-map-marker-alt {
+  color: #dfa73e;
+  font-size: 35px;
+  vertical-align: middle;
+  padding-left: 15px;
+}
