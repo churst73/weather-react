@@ -12,8 +12,8 @@ export default function Search() {
         <button type="submit" className="button-search">
           Search
         </button>
-        <a href="#">
-          <i class="fas fa-map-marker-alt"></i>
+        <a href="https://www.google.com/">
+          <i className="fas fa-map-marker-alt"></i>
         </a>
       </form>
     </div>

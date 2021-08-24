@@ -8,7 +8,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <Search />
-        <Results />
+        <Results defaultCity="London" />
       </div>
       <div className="mt-5">
         <a
