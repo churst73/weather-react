@@ -1,14 +1,12 @@
 import React from "react";
 import Search from "./Search.js";
-import Results from "./Results.js";
 import "./App.css";
 
 export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Search />
-        <Results defaultCity="London" />
+        <Search defaultCity="London" />
       </div>
       <div className="mt-5">
         <a
