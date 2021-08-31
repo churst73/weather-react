@@ -22,6 +22,10 @@ h3 {
 .Results .degree {
   margin-top: -90px;
 }
+.degree-button {
+  border: none;
+  background-color: #f2ebdf;
+}
 
 .Results .time-date {
   font-family: "Poppins", sans-serif;

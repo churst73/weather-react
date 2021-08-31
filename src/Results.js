@@ -22,12 +22,14 @@ export default function Results(props) {
             <span className="current-temp">
               {Math.round(props.data.temperature)}
             </span>
-            <img
-              src="./images/degreec.png"
-              className="degree"
-              alt="degree"
-              width="40px"
-            ></img>
+            <button className="degree-button" description="Want Fahrenheit?">
+              <img
+                src="./images/degreec.png"
+                className="degree"
+                alt="degree"
+                width="40px"
+              ></img>
+            </button>
           </div>
           <div className="col-5">
             <div className="time-date">
