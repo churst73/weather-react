@@ -12,6 +12,7 @@ export default function Search(props) {
     console.log(response.data);
     setWeatherData({
       ready: true,
+      coord: response.data.coord,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       date: new Date(response.data.dt * 1000),
@@ -54,7 +55,7 @@ export default function Search(props) {
           </a>
         </form>
         <Results data={weatherData} />
-        <WeatherForecast />
+        <WeatherForecast coords={weatherData.coord} />
       </div>
     );
   } else {
