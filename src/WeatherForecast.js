@@ -15,21 +15,17 @@ export default function WeatherForecast(props) {
   if (loaded) {
     return (
       <div className="row mt-5 pb-4">
-        <div className="col">
-          <WeatherForecastDay data={forecast[0]} />
-        </div>
-        <div className="col">
-          <WeatherForecastDay data={forecast[0]} />
-        </div>
-        <div className="col">
-          <WeatherForecastDay data={forecast[0]} />
-        </div>
-        <div className="col">
-          <WeatherForecastDay data={forecast[0]} />
-        </div>
-        <div className="col">
-          <WeatherForecastDay data={forecast[0]} />
-        </div>
+        {forecast.map(function (dailyforecast, index) {
+          if (index < 5) {
+            return (
+              <div className="col" key={index}>
+                <WeatherForecastDay data={dailyforecast} />
+              </div>
+            );
+          } else {
+            return null;
+          }
+        })}
       </div>
     );
   } else {
