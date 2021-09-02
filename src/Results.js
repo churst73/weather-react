@@ -7,11 +7,12 @@ export default function Results(props) {
     <div className="Results">
       <div className="hello-there">
         <h3>
-          Hello there, <span className="current-city">{props.data.city}</span>!
+          Hello there,{" "}
+          <span className="current-city fst-italic">{props.data.city}</span>!
         </h3>
       </div>
       <div>
-        <div className="row">
+        <div className="row mt-5">
           <div className="col-7">
             <img
               src={props.data.icon}

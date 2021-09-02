@@ -37,6 +37,18 @@ export default function Search(props) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
+  function searchLocation(position) {
+    let apiKey = "90cc04858e590b27514e091504dac169";
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function findLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchLocation);
+  }
 
   if (weatherData.ready) {
     return (
@@ -50,7 +62,7 @@ export default function Search(props) {
           <button type="submit" className="button-search">
             Search
           </button>
-          <a href="https://www.google.com/">
+          <a href="https://www.google.com/" onClick={findLocation}>
             <i className="fas fa-map-marker-alt"></i>
           </a>
         </form>
