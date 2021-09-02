@@ -9,8 +9,9 @@
   color: #6d6e6f;
   font-weight: 400;
   font-size: 20px;
+  align-content: center;
 }
-.col-2 {
+.col {
   margin-right: 10px;
 }
 
